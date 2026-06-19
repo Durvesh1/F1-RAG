@@ -1,0 +1,5 @@
+langchain
+langchain-experimental
+faiss-cpu
+langchain-ollama
+pypdf
