@@ -1,6 +1,6 @@
 from data_loader import load_data
 from llm_ollama_service import LLM_Ollama_Service
-from retriever_agent import get_retriever_agent
+from retriever_agent import RetrieverAgent
 from data_vectorize import vectorize_data, vectorize_f1_data
 from rag_agent import RagAgent
 
@@ -20,17 +20,14 @@ from rag_agent import RagAgent
 llm_service = LLM_Ollama_Service(model="llama3.2:1b", temperature=0)
 
 vector_store = vectorize_f1_data()
-retriever_agent = get_retriever_agent(vector_store, llm_service)
-
+retriever_agent = RetrieverAgent(vector_store, llm_service)
+rag = RagAgent(llm_service)
 
 while True:
 
     # query = "What are the rules regarding two wheelers?"
     query = input("Please enter a query: ")
     top_chunks = retriever_agent.get_chunks(query)
-
-    rag = RagAgent(query, top_chunks, llm_service)
-
-    response = rag.get_response()
+    response = rag.get_response(query, top_chunks)
 
     print(response)

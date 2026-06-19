@@ -16,8 +16,6 @@ class RetrieverAgent:
     def __init__(self, vector_store, llm_service: LLM_Base_Service):
         self.vector_store = vector_store
 
-        # self.llm = ChatOllama(model=model, temperature=temperature)
-
         self.llm = llm_service.get_llm()
 
 
@@ -53,7 +51,6 @@ class RetrieverAgent:
 
     def get_chunks(self, query:str , top_entries = 3,rerank = True):
         chunks = self.vector_store.similarity_search_with_score(query, k = top_entries * (2 if rerank else 1))
-        # dict = defaultdict()
 
         revised_chunks = []
 
@@ -73,9 +70,6 @@ class RetrieverAgent:
         revised_chunks.sort(reverse = True, key = lambda x: x["score"])
 
         return revised_chunks[:top_entries]
-
-def get_retriever_agent(vector_store, llm_service):
-    return RetrieverAgent(vector_store, llm_service)
 
 
 

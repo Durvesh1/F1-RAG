@@ -6,12 +6,7 @@ from llm_service import LLM_Base_Service
 
 
 class RagAgent:
-    def __init__(self, query, data_chunks, llm_service:LLM_Base_Service):
-        self.query = query
-        self.data_chunks = data_chunks
-
-        # self.llm = ChatOllama(model=model, temperature=temperature)
-
+    def __init__(self, llm_service:LLM_Base_Service):
         self.llm = llm_service.get_llm()
 
         self.system_prompt = """
@@ -27,8 +22,8 @@ class RagAgent:
         
         """
 
-    def format_chunks(self):
-        chunks = self.data_chunks
+    def format_chunks(self, data_chunks):
+        chunks = data_chunks
         context = ""
 
         for chunk in chunks:
@@ -36,10 +31,10 @@ class RagAgent:
 
         return context
 
-    def get_response(self):
+    def get_response(self, query, top_chunks):
 
-        query = self.query
-        context = self.format_chunks()
+        query = query
+        context = self.format_chunks(top_chunks)
 
         prompt = ChatPromptTemplate.from_messages([
             ("system", self.system_prompt),
