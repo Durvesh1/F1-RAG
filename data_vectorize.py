@@ -6,6 +6,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_ollama import OllamaEmbeddings
 
+from vectors_service.base_vector_store import BaseVectorStore
+
 
 def vectorize_data(path):
     data = load_data(path)
@@ -35,14 +37,16 @@ def retrieve_chunks_from_vector(vector_store):
     return chunks
 
 
-def vectorize_f1_data(data):
+def vectorize_f1_data(vector_store:BaseVectorStore ,data):
     splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 
     chunks = splitter.split_documents(data)
 
-    embedding_model = OllamaEmbeddings(model="nomic-embed-text")
+    # embedding_model = OllamaEmbeddings(model="nomic-embed-text")
 
-    vector_store = FAISS.from_documents(chunks, embedding_model)
+    # vector_store = FAISS.from_documents(chunks, embedding_model)
+
+    vector_store.add_documents(chunks)
 
     return vector_store
 

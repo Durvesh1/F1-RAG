@@ -1,9 +1,9 @@
 import os
 from pathlib import Path
 
-from document_loader.document_docx_loader import DOCX_Document_Loader
-from document_loader.document_pdf_loader import PDF_Document_Loader
-from document_loader.document_txt_loader import TEXT_Document_Loader
+from document_loaders.document_docx_loader import DOCX_Document_Loader
+from document_loaders.document_pdf_loader import PDF_Document_Loader
+from document_loaders.document_txt_loader import TEXT_Document_Loader
 
 path = "./data"
 def load_data(path=path):

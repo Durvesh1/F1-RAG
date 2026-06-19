@@ -4,3 +4,4 @@ faiss-cpu
 langchain-ollama
 pypdf
 rank_bm25
+langchain-postgres
