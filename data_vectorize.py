@@ -42,21 +42,7 @@ def vectorize_f1_data(vector_store:BaseVectorStore ,data):
 
     chunks = splitter.split_documents(data)
 
-    # embedding_model = OllamaEmbeddings(model="nomic-embed-text")
-
-    # vector_store = FAISS.from_documents(chunks, embedding_model)
-
     vector_store.add_documents(chunks)
 
     return vector_store
 
-def bm25_retrieve(vector_store):
-    bm25_retriever = BM25Retriever.from_documents(vector_store)
-    bm25_retriever.k = 5
-
-    results = bm25_retriever.invoke("How many team members are allowed in the signalling area?")
-
-    print(results)
-
-# data = load_f1_data()
-# bm25_retrieve(data)
