@@ -1,12 +1,8 @@
-from data_loader import load_data
-from llm_ollama_service import LLM_Ollama_Service
-from retriever_agent import RetrieverAgent
-from data_vectorize import vectorize_data, vectorize_f1_data
-from rag_agent import RagAgent
-
-# data = load_data()
-#
-# print(data)
+from data_loader import load_f1_data
+from llm_services.llm_ollama_service import LLM_Ollama_Service
+from agents.retriever_agent import RetrieverAgent
+from data_vectorize import vectorize_f1_data
+from agents.rag_agent import RagAgent
 
 
 # vector_store = vectorize_data("")
@@ -19,8 +15,10 @@ from rag_agent import RagAgent
 
 llm_service = LLM_Ollama_Service(model="llama3.2:1b", temperature=0)
 
-vector_store = vectorize_f1_data()
-retriever_agent = RetrieverAgent(vector_store, llm_service)
+
+data = load_f1_data()
+vector_store = vectorize_f1_data(data)
+retriever_agent = RetrieverAgent(vector_store, llm_service, data)
 rag = RagAgent(llm_service)
 
 while True:

@@ -1,11 +1,10 @@
 from collections import defaultdict
 
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_ollama import ChatOllama
 from pydantic import BaseModel
+from langchain_community.retrievers import BM25Retriever
 
-from llm_ollama_service import LLM_Ollama_Service
-from llm_service import LLM_Base_Service
+from llm_services.llm_service import LLM_Base_Service
 
 
 class RelevanceGrade(BaseModel):
@@ -13,10 +12,12 @@ class RelevanceGrade(BaseModel):
 
 class RetrieverAgent:
 
-    def __init__(self, vector_store, llm_service: LLM_Base_Service):
+    def __init__(self, vector_store, llm_service: LLM_Base_Service, raw_data):
         self.vector_store = vector_store
 
         self.llm = llm_service.get_llm()
+
+        self.raw_data = raw_data
 
 
         self.system_prompt = """
@@ -49,6 +50,18 @@ class RetrieverAgent:
 
         return response.relevance
 
+    def bm25_retrieve(self):
+        bm25_retriever = BM25Retriever.from_documents(self.raw_data)
+        bm25_retriever.k = 3
+
+        results = bm25_retriever.invoke("How many team members are allowed in the signalling area?")
+        res = []
+        for result in results:
+            dict = defaultdict()
+            dict["content"] = result.page_content
+            res.append(dict)
+        return res
+
     def get_chunks(self, query:str , top_entries = 3,rerank = True):
         chunks = self.vector_store.similarity_search_with_score(query, k = top_entries * (2 if rerank else 1))
 
@@ -69,8 +82,11 @@ class RetrieverAgent:
 
         revised_chunks.sort(reverse = True, key = lambda x: x["score"])
 
-        return revised_chunks[:top_entries]
+        temp = revised_chunks[:top_entries]
 
+        bm25_chunks = self.bm25_retrieve()
+
+        return bm25_chunks+temp
 
 
 

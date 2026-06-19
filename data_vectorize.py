@@ -1,4 +1,4 @@
-from langchain_ollama import OllamaEmbeddings
+from langchain_community.retrievers import BM25Retriever
 
 from data_loader import load_data, load_f1_data
 from langchain_experimental.text_splitter import SemanticChunker
@@ -35,15 +35,24 @@ def retrieve_chunks_from_vector(vector_store):
     return chunks
 
 
-def vectorize_f1_data():
-    f1_data = load_f1_data()
-
+def vectorize_f1_data(data):
     splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 
-    chunks = splitter.split_documents(f1_data)
+    chunks = splitter.split_documents(data)
 
     embedding_model = OllamaEmbeddings(model="nomic-embed-text")
 
     vector_store = FAISS.from_documents(chunks, embedding_model)
 
     return vector_store
+
+def bm25_retrieve(vector_store):
+    bm25_retriever = BM25Retriever.from_documents(vector_store)
+    bm25_retriever.k = 5
+
+    results = bm25_retriever.invoke("How many team members are allowed in the signalling area?")
+
+    print(results)
+
+# data = load_f1_data()
+# bm25_retrieve(data)

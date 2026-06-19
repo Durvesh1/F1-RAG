@@ -1,6 +1,9 @@
 import os
+from pathlib import Path
 
-from langchain_community.document_loaders import PyPDFLoader
+from document_loader.document_docx_loader import DOCX_Document_Loader
+from document_loader.document_pdf_loader import PDF_Document_Loader
+from document_loader.document_txt_loader import TEXT_Document_Loader
 
 path = "./data"
 def load_data(path=path):
@@ -19,10 +22,21 @@ def load_data(path=path):
     return all_content
 
 def load_f1_data():
+    file_path = "./data/f1-regulations.pdf"
+    ext = Path(file_path).suffix.lower()
 
-    loader = PyPDFLoader("./data/f1-regulations.pdf")
-    doc = loader.load()
+    if ext == ".pdf":
+        return PDF_Document_Loader().load(file_path)
+    elif ext == ".doc":
+        return DOCX_Document_Loader().load(file_path)
+    elif ext == ".txt":
+        return TEXT_Document_Loader().load(file_path)
+    else:
+        raise ValueError("Unsupported file type")
 
-    return doc
+    # loader = PyPDFLoader("./data/f1-regulations.pdf")
+    # doc = loader.load()
+
+    # return doc
 
 
