@@ -1,4 +1,5 @@
 from data_loader import load_data
+from llm_ollama_service import LLM_Ollama_Service
 from retriever_agent import get_retriever_agent
 from data_vectorize import vectorize_data, vectorize_f1_data
 from rag_agent import RagAgent
@@ -16,8 +17,11 @@ from rag_agent import RagAgent
 # print(top_chunks)
 
 
+llm_service = LLM_Ollama_Service(model="llama3.2:1b", temperature=0)
+
 vector_store = vectorize_f1_data()
-retriever_agent = get_retriever_agent(vector_store)
+retriever_agent = get_retriever_agent(vector_store, llm_service)
+
 
 while True:
 
@@ -25,7 +29,7 @@ while True:
     query = input("Please enter a query: ")
     top_chunks = retriever_agent.get_chunks(query)
 
-    rag = RagAgent(query, top_chunks)
+    rag = RagAgent(query, top_chunks, llm_service)
 
     response = rag.get_response()
 

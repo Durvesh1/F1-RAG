@@ -1,12 +1,18 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama import ChatOllama
 
+from llm_ollama_service import LLM_Ollama_Service
+from llm_service import LLM_Base_Service
+
+
 class RagAgent:
-    def __init__(self, query, data_chunks, model="llama3.2:1b", temperature=0):
+    def __init__(self, query, data_chunks, llm_service:LLM_Base_Service):
         self.query = query
         self.data_chunks = data_chunks
 
-        self.llm = ChatOllama(model=model, temperature=temperature)
+        # self.llm = ChatOllama(model=model, temperature=temperature)
+
+        self.llm = llm_service.get_llm()
 
         self.system_prompt = """
         You are a helpful assistant and would help the user by assessing the context given to you for a user question

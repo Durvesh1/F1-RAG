@@ -4,17 +4,21 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama import ChatOllama
 from pydantic import BaseModel
 
+from llm_ollama_service import LLM_Ollama_Service
+from llm_service import LLM_Base_Service
+
+
 class RelevanceGrade(BaseModel):
     relevance: str
 
 class RetrieverAgent:
 
-    def __init__(self, vector_store, model="llama3.2:1b", temperature=0):
+    def __init__(self, vector_store, llm_service: LLM_Base_Service):
         self.vector_store = vector_store
-        self.model = model
-        self.temperature = temperature
 
-        self.llm = ChatOllama(model=model, temperature=temperature)
+        # self.llm = ChatOllama(model=model, temperature=temperature)
+
+        self.llm = llm_service.get_llm()
 
 
         self.system_prompt = """
@@ -70,8 +74,8 @@ class RetrieverAgent:
 
         return revised_chunks[:top_entries]
 
-def get_retriever_agent(vector_store, model="llama3.2:1b", temperature=0):
-    return RetrieverAgent(vector_store, model, temperature)
+def get_retriever_agent(vector_store, llm_service):
+    return RetrieverAgent(vector_store, llm_service)
 
 
 
