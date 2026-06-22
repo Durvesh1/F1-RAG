@@ -62,7 +62,7 @@ class RetrieverAgent:
             res.append(dict)
         return res
 
-    def get_chunks(self, query:str , top_entries = 3,rerank = True):
+    def retrieve_chunks(self, query:str , top_entries = 3,rerank = True):
         chunks = self.vector_store.similarity_search_with_score(query, k = top_entries * (2 if rerank else 1))
 
         revised_chunks = []

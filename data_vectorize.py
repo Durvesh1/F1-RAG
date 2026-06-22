@@ -37,12 +37,8 @@ def retrieve_chunks_from_vector(vector_store):
     return chunks
 
 
-def vectorize_f1_data(vector_store:BaseVectorStore ,data):
-    splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-
-    chunks = splitter.split_documents(data)
-
+def vectorize_data_from_chunks(vector_store:BaseVectorStore ,chunks):
     vector_store.add_documents(chunks)
-
     return vector_store
+
 
