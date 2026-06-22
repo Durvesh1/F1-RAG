@@ -1,57 +1,64 @@
 from langchain_core.prompts import ChatPromptTemplate
-
 from llm_services.llm_service import LLM_Base_Service
 
 
 class RagAgent:
-    def __init__(self, llm_service:LLM_Base_Service):
+
+    def __init__(self, llm_service: LLM_Base_Service):
         self.llm = llm_service.get_llm()
 
         self.system_prompt = """
-        You are a helpful assistant and would help the user by assessing the context given to you for a user question
-        and give response back to the user question based on the data that is present in the context.
-        Your response should only be based on the context that is shared with you and you should not invent any
-        facts that are not part of the document. 
-        Also if there is any section ID, number or relevant document number information present in the context, you should
-        quote that relevant information as well.
+        You are a helpful assistant that answers user questions using only the provided context.
         
-        Try to find the exact information related to the query that is provided to you. If you can find the exact match
-        for the query, then that should be the response for the query. If you cannot find the exact match, then use the 
-        context information for give the best response you can.
-        
-        If the user question and the context that provided to you does not make sense or is inconsistent then
-        you should say you do not have all the information for the user query and do not give any further response. 
-        
-
-        
+        Rules:
+        - Use ONLY the provided context.
+        - Do NOT invent facts.
+        - If context is insufficient, clearly say you don't have enough information.
+        - If section IDs, page numbers, or document references exist, always include them in the answer.
+        - Prefer exact matches from context when available.
+        - If the context is inconsistent or conflicting, explicitly mention the conflict and do not guess.
         """
 
-    def format_chunks(self, data_chunks):
-        chunks = data_chunks
-        context = ""
+    def format_chunks(self, docs):
+        """
+        docs: List[RetrievedDocument]
+        """
+        formatted_context = []
 
-        for chunk in chunks:
-            context = context + "\n" + chunk["content"]
+        for i, doc in enumerate(docs):
+            source = getattr(doc, "source", "unknown")
+            metadata = getattr(doc, "metadata", {})
 
-        return context
+            block = f"""
+                [Document {i+1}]
+                Source: {source}
+                Metadata: {metadata}
+                
+                Content:
+                {doc.content}
+                """
+            formatted_context.append(block)
 
-    def get_response(self, query, top_chunks):
+        return "\n\n".join(formatted_context)
 
-        query = query
-        context = self.format_chunks(top_chunks)
+    def get_response(self, query: str, final_docs: list):
+
+        context = self.format_chunks(final_docs)
 
         prompt = ChatPromptTemplate.from_messages([
             ("system", self.system_prompt),
-            ("human", """
-                    Query: {query}
-                    Context: {context}
-                    """)
-        ]
-        )
+            ("human",
+             """
+             Question: {query}
+             Context:{context}
+             """)
+        ])
 
         chain = prompt | self.llm
 
-        response = chain.invoke({"query": query, "context": context})
+        response = chain.invoke({
+            "query": query,
+            "context": context
+        })
 
         return response.content
-
