@@ -8,7 +8,7 @@ class VectorSimilarityRetriever(BaseRetrieverService):
         self.vector_store = vector_store
 
     def retrieve(self, query: str, k: int):
-        docs = self.vector_store.similarity_search(
+        docs = self.vector_store.similarity_search_with_score(
             query,
             k=k
         )
@@ -17,7 +17,8 @@ class VectorSimilarityRetriever(BaseRetrieverService):
             RetrievedDocument(
                 content=d.page_content,
                 metadata=d.metadata,
-                source="vector"
+                source="vector",
+                score = float(score)
             )
-            for d in docs
+            for d,score in docs
         ]

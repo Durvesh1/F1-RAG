@@ -25,6 +25,9 @@ class RetrieverAgent:
             retrieval_results
         )
 
+        if not self.reranker:
+            return fused_docs[:retrieval_k]
+
         final_docs = self.reranker.rerank(
             query,
             fused_docs,

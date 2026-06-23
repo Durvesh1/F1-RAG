@@ -20,7 +20,13 @@ class RRFFusion:
 
             for rank, doc in enumerate(result_list):
 
-                doc_id = hash(doc.content)
+                doc_id = doc.chunk_id
+
+                # fallback safety (optional)
+                # if doc_id is None:
+                #     doc_id = hash(doc.content)
+
+                # doc_id = hash(doc.content)
 
                 doc_lookup[doc_id] = doc
 

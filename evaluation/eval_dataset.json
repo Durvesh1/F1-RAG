@@ -1,0 +1,1302 @@
+[
+  {
+    "question": "What are the specific requirements for the official meetings of Formula 1, as outlined in the 2026 FIA F1 Regulations - Section B [Sporting] – Iss 05?",
+    "expected_answer": "The official meetings of Formula 1 must be held at least twice a year, with each meeting lasting no more than three days. The meetings must be approved by the World Motor Sport Council (WMSC) and must include representatives from all FIA member countries.",
+    "expected_chunk_ids": [
+      "8c1e9903d9d04a7a8b1a2af3b77f01b6"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 0,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the general principles and provisions for FIA delegates in a Formula One competition?",
+    "expected_answer": "The general principles and provisions for FIA delegates in a Formula One competition include B1.1 General Principles & Provisions, B1.2 FIA Delegates, B1.3 Officials, B1.4 Official Meetings, B1.5 General Safety, B1.6 Pit Entry Road, Pit Lane And Pit Exit Road, B1.7 Changes Of Driver, B1.8 Driving, B1.9 Incidents, Infringements & Penalties.",
+    "expected_chunk_ids": [
+      "a5dd7fc7fc5161695ea5935348f1b59b"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 1,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the purpose of the Formula 1 Sporting Regulations?",
+    "expected_answer": "The primary objective of the Formula 1 Sporting Regulations is to ensure fair competition and safety during racing events.",
+    "expected_chunk_ids": [
+      "867b6d4956795103d236a2a252c6adda"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "textual",
+      "source_chunk_index": 2,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific provisions for the return of tyres in accordance with article B6, specifically section B6.5?",
+    "expected_answer": "According to article B6, section B6.5, specific provisions for the return of tyres include specifying the type and quantity of tyres that must be returned, as well as any additional requirements such as cleaning or inspection.",
+    "expected_chunk_ids": [
+      "27c8262f79376c17155e3a96e706d597"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Question",
+      "source_chunk_index": 3,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific requirements for track running outside a competition in Formula 1, as outlined in Article B11 of Sporting Regulations?",
+    "expected_answer": "B11.2 Provisions for Track Running Outside a Competition",
+    "expected_chunk_ids": [
+      "89e10e1bd74e01f3db6379b7c9a0be1c"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 4,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the definition of a permitted work in the context of the Parc Fermé permitted works?",
+    "expected_answer": "According to Appendix B4, a permitted work refers to any activity or project that complies with the approved changes for subsequent years.",
+    "expected_chunk_ids": [
+      "99a238b2715a853e358c24f93455949d"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 5,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific instructions that stewards or Race Directors can give to competitors during a Formula 1 race?",
+    "expected_answer": "The stewards or Race Directors can issue special circulars to all competitors who have acknowledged receipt of these instructions.",
+    "expected_chunk_ids": [
+      "2f09c804f00628e8076e6bc29919839f"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "contextualized question",
+      "source_chunk_index": 6,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "Who must acknowledge receipt of decisions and communications concerning their competitors in the event that they have been given written permission by the FIA to do otherwise.",
+    "expected_answer": "What is the deadline for acknowledging receipt of decisions and communications concerning a competitor's performance?",
+    "expected_chunk_ids": [
+      "5f71d63114a69b3468d6869feea9c379"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 7,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the role of a Safety Delegate in an F1 race?",
+    "expected_answer": "The Safety Delegate is responsible for ensuring the safety of drivers, teams, and spectators during the event.",
+    "expected_chunk_ids": [
+      "4678cb770191785824b081565cd40442"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 8,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "Which delegate is responsible for nominating a representative of the President of FIA?",
+    "expected_answer": "d. Sporting Delegate.",
+    "expected_chunk_ids": [
+      "24b5c9293980349e048c42bd63106069"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "task",
+      "source_chunk_index": 9,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the responsibilities of FIA delegates in relation to Formula 1 Sporting Regulations?",
+    "expected_answer": "The role of FIA delegates is to help officials in their duties, ensure all regulations governing the championship are respected, and make necessary comments or draw up reports concerning the competition.",
+    "expected_chunk_ids": [
+      "18c5364c2817478cdeffecee48ed618e"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 10,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "Who will be nominated by the FIA to organise this competition?",
+    "expected_answer": "The Clerk of the Course",
+    "expected_chunk_ids": [
+      "12a7d93c722a02219833bc75f69709b2"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 11,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific procedures for the stewards, race director, clerk of the course, and technical delegate in relation to safety car usage during an F1 race?",
+    "expected_answer": "The stewards, race director, clerk of the course, and technical delegate must be aware of the following safety procedures: 1. The use of the Safety Car should only be initiated when there is a genuine risk to the safety of drivers or spectators. 2. When the Safety Car is deployed, all racing activities should be suspended until it has been cleared by the stewards. 3. The Safety Car must be used in accordance with the FIA F1 Regulations and the specific circumstances of the race.",
+    "expected_chunk_ids": [
+      "2b0d97db636d42f77d2f0d0c5d51b182"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Question",
+      "source_chunk_index": 12,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the role of stewards at the start of a Formula One race?",
+    "expected_answer": "B1.3.4 The stewards, the Race Director, the Clerk of the Course and the Technical Delegate must be present at the start of the Competition.",
+    "expected_chunk_ids": [
+      "27a60baf453ae937221bf53dc5ba0e0e"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 13,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific rules regarding video assistance for stewards in Formula 1 racing?",
+    "expected_answer": "B1.3.7 The Stewards may use any video or electronic means to assist them in reaching a decision. The Stewards may overrule judges of fact.",
+    "expected_chunk_ids": [
+      "c3179125ddb64bbe754b9eb20e60ee01"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 14,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When will the Race Director consider another meeting necessary?",
+    "expected_answer": "Three (3) hours before the start of the Race.",
+    "expected_chunk_ids": [
+      "a77f5b50e4f7669dc2edee2e6414d265"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 15,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific rules regarding who can touch a stopped F1 car during free practice sessions?",
+    "expected_answer": "B1.5.3 Save as specifically authorised by the ISC or these FIA F1 Regulations, no one except the driver may touch a stopped F1 car unless it is in the paddock, the Competitor’s Designated Garage Area, the Pit Lane or on the starting grid.",
+    "expected_chunk_ids": [
+      "339ca7f2d9b9587e891c2062676118b5"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 16,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the permitted exceptions to driving on the Pit Exit Road in F1 racing?",
+    "expected_answer": "b. Drivers when driving or on foot, having first received permission to do so from a marshal.",
+    "expected_chunk_ids": [
+      "9c8d43324fc0715986df08316b11a253"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "exact",
+      "source_chunk_index": 17,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When should an F1 car be stopped if one of its side lights is not working?",
+    "expected_answer": "If the fault has been remedied.",
+    "expected_chunk_ids": [
+      "70f238a99c3228d26e42fcdc578426fb"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "rule-based",
+      "source_chunk_index": 18,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the maximum number of team members allowed in the signalling area during free practice sessions?",
+    "expected_answer": "12",
+    "expected_chunk_ids": [
+      "9f10a81fd254c7bf767a7e45275c10e8"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "rule-based question",
+      "source_chunk_index": 19,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What outer garments must present and wear to comply with FIA Standard 8867-2016, FIA Standard 8856-2000 or FIA Standard 8856-2018 during an F1 race?",
+    "expected_answer": "All present and must be wearing outer garments that are in compliance with either FIA Standard 8867-2016, FIA Standard 8856-2000 or FIA Standard 8856-2018.",
+    "expected_chunk_ids": [
+      "3878f6494690315173c07aec5a0e2a91"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 20,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the requirements to fit all components of the Driver Cooling System during a Sprint or Race with a declared Heat Hazard?",
+    "expected_answer": "All components of the Driver Cooling System, with the exception of any cooling medium and items of driver’s personal equipment that form part of the system must be fitted.",
+    "expected_chunk_ids": [
+      "6a178bf36a359cd7423307642a1a354c"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 21,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What percentage of precipitation must be predicted by the Official Weather Service for a rain hazard to apply in Formula 1 racing?",
+    "expected_answer": "40%",
+    "expected_chunk_ids": [
+      "3e8f64790f883a6693e44ab5d3a1267d"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 22,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When will a 'Rain Hazard' be declared at an AFC/Sprint/Competition?",
+    "expected_answer": "At each AFC a Rain Hazard will be declared for the Sprint no later than two (2) hours before the start of Sprint Qualifying, in such case it will remain in force from the time of declaration until the end-of-session signal for the Sprint is given.",
+    "expected_chunk_ids": [
+      "a81f6db41f04150ce73782211e1305b7"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Question",
+      "source_chunk_index": 23,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When an F1 car is deemed to be in parc fermé while a Rain Hazard is in force, other than when the F1 cars are sealed in accordance with Article B3.4.2 or B3.4.3, what can the Race Director do?",
+    "expected_answer": "What is the message that will be sent to all Competitors if 'Low Grip Conditions' are declared?",
+    "expected_chunk_ids": [
+      "d56182ccad161ec1b67a811f28f8951e"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 24,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the allocation method for designated garage areas in Sprint Qualifying or Qualifying?",
+    "expected_answer": "The FIA will allocate garages and an area in the Pit Lane on an equal basis where each Competitor may work and, within each of these ‘Designated Garage Area(s)” , one position, a “Designated Pit Stop Position”, where pit stops during any session may be carried out.",
+    "expected_chunk_ids": [
+      "483b7c804fbb4155cfc9d4367e117894"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "definition",
+      "source_chunk_index": 25,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific restrictions on equipment placement in the Pit Lane during Formula 1 racing?",
+    "expected_answer": "b. Leave equipment in the Fast Lane, other than when speciﬁcally detailed in Article B5.3.",
+    "expected_chunk_ids": [
+      "e33933a749779402a2e21287cddef1ba"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "rule-based",
+      "source_chunk_index": 26,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the Pit Stop Camera's purpose in relation to F1 cars?",
+    "expected_answer": "The Pit Stop Camera is used to monitor the pit stops of other competitors, allowing them to see where they are and when they will leave the pit lane. This helps prevent any potential collisions or interference with their own pit stop.",
+    "expected_chunk_ids": [
+      "bdc9b8e5d818001ba6e4ae0f6b269d54"
+    ],
+    "metadata": {
+      "difficulty": "$\boxed{High}$",
+      "type": "question",
+      "source_chunk_index": 27,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When can a Formula 1 car be safely released from its designated garage or pit stop position?",
+    "expected_answer": "a. F1 Cars must not be released from a garage or designated pit stop position in any way that could endanger pit lane personnel or another driver, or that is likely to cause damage to another car.",
+    "expected_chunk_ids": [
+      "319841149b281e2322098dad6eb89316"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "evaluation",
+      "source_chunk_index": 28,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the penalty for releasing an F1 car from a safe position during a qualifying session?",
+    "expected_answer": "The stewards may drop the driver such number of grid positions as they consider appropriate. This will be applied to the Race unless the infringement has been committed during the sprint qualifying session, in which case the penalty will be applied to the sprint session.",
+    "expected_chunk_ids": [
+      "3221819c97c2aedb85d46e3c05a7eba2"
+    ],
+    "metadata": {
+      "difficulty": "$\boxed{High}$",
+      "type": "question",
+      "source_chunk_index": 29,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What does 'continues to drive an F1 car knowing it has been released in an unsafe condition' mean?",
+    "expected_answer": "The driver continues to operate the car despite it being in a hazardous state.",
+    "expected_chunk_ids": [
+      "d7325a57291923b225bf89f263fffcce"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "definition",
+      "source_chunk_index": 30,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific requirements for team personnel carrying out work on an F1 car in designated pit stop positions during qualifying sessions?",
+    "expected_answer": "According to ECE 22.05, all team personnel must wear helmets that meet or exceed the requirements of European motorcycle road helmets, DOT USA motorcycles road helmets, or JIS T8133-2015 class 2 Japanese protective helmets for automobile users.",
+    "expected_chunk_ids": [
+      "c811caa1ec76ca1e61da06cae6477363"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Question",
+      "source_chunk_index": 31,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the speed limit in Pit Lane during a free practice session?",
+    "expected_answer": "80km/h",
+    "expected_chunk_ids": [
+      "7c1a33e3c52cf86697418dcb852afcc2"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 32,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the rules regarding speeding in Formula 1 racing?",
+    "expected_answer": "In Formula 1, stewards can impose penalties for speeding. According to Article B1.9.3, they may do so if they suspect a driver was speeding to gain an advantage. The specific penalty options include a 5-Second Penalty, a 10-Second Penalty, Drive-Through Penalty, or Stop-and-Go Penalty. However, F1 cars cannot be reversed in the Pit Lane under their own power.",
+    "expected_chunk_ids": [
+      "aef17abe99fdbe89355680d807b83e6e"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "rule",
+      "source_chunk_index": 33,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific rules regarding F1 cars' movement during the start procedure?",
+    "expected_answer": "Unless an F1 car is pushed from the grid at any time during the start procedure, F1 Cars may only be driven from the Competitors’ Designated Garage Area to the end of the Pit Lane. Any car(s) driven to the end of the Pit Lane prior to the start or re-start of a LTCS must form up in a line in the Fast Lane and leave in the order they got there unless another F1 Car is unduly delayed.",
+    "expected_chunk_ids": [
+      "e2869fee08eb5e4173efc6f1b73c8da6"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Question",
+      "source_chunk_index": 34,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the maximum number of drivers allowed for a single driver during a Formula 1 championship?",
+    "expected_answer": "Four (4)",
+    "expected_chunk_ids": [
+      "a41c02448c9e80fd81bafa0f6a636ba7"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "sports regulation",
+      "source_chunk_index": 35,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the rules for changing drivers in a championship race?",
+    "expected_answer": "B1.7.2 Provided any change proposed after the end of initial scrutineering receives the consent of the stewards, a change of driver may be made: a. At each Competition where a sprint session is not scheduled, at any time before the start of the qualifying session. b. At each Competition where a sprint session is scheduled, at any time before the start of the sprint qualifying session for a driver who will participate in the sprint session, or at any time before the start of the qualifying session for a driver who will participate in the Race.",
+    "expected_chunk_ids": [
+      "62333b310162ec95c65f8de72f241557"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 36,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When is it mandatory for a Competitor to inform the FIA about the drivers they plan to use during FP1 and FP2?",
+    "expected_answer": "No less than twenty-four (24) hours before the scheduled start of each session.",
+    "expected_chunk_ids": [
+      "77999478ef6607461c42f31394cbcad2"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Rule",
+      "source_chunk_index": 37,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "Who will the driver use F1 cars for during the 7 days prior to the start of the Competition?",
+    "expected_answer": "The details of the driver, who has not participated in more than two (2) Championship Races in their career, that they will use. They carry the competition number that has been allocated to them.",
+    "expected_chunk_ids": [
+      "8ccf92313406c5c9f280637c6a1cad95"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 38,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific requirements for a driver's helmet and protective gear when wearing flame-resistant clothing while driving an F1 car?",
+    "expected_answer": "The driver must wear helmets, frontal head restraints (FHR), and flame-resistant clothing specified in the ISC.",
+    "expected_chunk_ids": [
+      "30f36ae626012e5b4fd8871fa69dfb54"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "sports regulation",
+      "source_chunk_index": 39,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the requirements for drivers to follow when approaching a waved yellow flag marshalling sector on the trackside light panels?",
+    "expected_answer": "In accordance with Article 2.5.5b of Appendix H of the ISC, any driver passing through a waved yellow flag marshalling sector must reduce their speed significantly and be prepared to change direction or stop.",
+    "expected_chunk_ids": [
+      "cbd884ef7a50d99bb638b30fb5289dea"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Question",
+      "source_chunk_index": 40,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the speed limit for drivers passing through double waved yellow flags during a Safety Car or Virtual Safety Car period?",
+    "expected_answer": "The driver must stay above the minimum time set by the FIA ECU in each marshalling sector concerned.",
+    "expected_chunk_ids": [
+      "d60b889c8c20178e4d94473da3bd441a"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "rule-based question",
+      "source_chunk_index": 41,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific rules regarding F1 car speed on the track?",
+    "expected_answer": "B1.8.5- B1.8.6: An F1 Car must not drive unnecessarily slowly, erratically or in a manner that could be deemed potentially dangerous to other drivers or any other person.",
+    "expected_chunk_ids": [
+      "ee33136231fc42a2e71eba7cdd244d43"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Rule",
+      "source_chunk_index": 42,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific requirements for a driver whose car has significant and obvious damage to a structural component that poses an immediate risk of endangering the driver or others?",
+    "expected_answer": "B1.8.7 Any driver whose car has signiﬁcant and obvious damage to a structural component which results in it being in a condition presenting an immediate risk of endangering the driver or others, or whose car has a signiﬁcant failure or fault which means it cannot reasonably return to the Pit Lane without unnecessarily impeding another competitor or otherwise hindering the Competition must leave the track as soon as it is safe to do so.",
+    "expected_chunk_ids": [
+      "667a1db65eb66ff8e8ed6d442f40b1f5"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Rule",
+      "source_chunk_index": 43,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the correct procedure for a driver who abandons their F1 car on the circuit, and what are the exceptions to this rule?",
+    "expected_answer": "The driver must leave the car in neutral or with the clutch disengaged, with the ERS shut down and the steering wheel in place. However, if it is safe to do so, they can temporarily abandon the car during a suspension of a TTCS (Turn Three Complex Safety Car period) as long as they are not abandoned due to a mechanical issue, F1 car damage, or gaining an advantage.",
+    "expected_chunk_ids": [
+      "0e97bae6fb1e4209f929bec2fce59643"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Question",
+      "source_chunk_index": 44,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the regulations regarding investigations of incidents by stewards?",
+    "expected_answer": "B1.9.2 Investigation of Incident(s) It shall be at the discretion of the stewards to decide whether or not to proceed with an investigation. The stewards may also investigate an Incident noted by themselves. If an Incident is under investigation by the stewards a message informing all Competitor s which driver or drivers are involved will be sent. Provided that such message is displayed no later than sixty (60) minutes after the end-of-session signal of a TTCS the driver or drivers concerned may not leave the circuit without the consent of the stewards.",
+    "expected_chunk_ids": [
+      "143f77bbdae8e2b4170d9a6b9ef0d065"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 45,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the penalties for an incident during a LTCS if it is not clear who was at fault?",
+    "expected_answer": "In the event of an incident during any LTCS, the Stewards may delete a driver’s lap time (or lap times) or drop the driver such number of grid positions as they consider appropriate. Unless it is completely clear that a driver committed a driving infringement, any such incident will normally be investigated after the relevant session.",
+    "expected_chunk_ids": [
+      "714183a6d54f3fc82669f4ad4cdccd60"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "text",
+      "source_chunk_index": 46,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the maximum number of grid position penalties that can be served in a Formula 1 race?",
+    "expected_answer": "5",
+    "expected_chunk_ids": [
+      "377cbdb35418b87fbe5d74173a665906"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "sports-regulations",
+      "source_chunk_index": 47,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When must a driver enter their designated pit stop position in relation to other drivers?",
+    "expected_answer": "In their Designated Pit Stop Position for at least five seconds and then re-join the TTCS.",
+    "expected_chunk_ids": [
+      "1ca4cae608fa4f1eebbc64e7ea435195"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 48,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the penalty for a driver who receives a 5-Second Penalty?",
+    "expected_answer": "The driver must lose 5 seconds from their race time.",
+    "expected_chunk_ids": [
+      "2c3d80f4c6b97c1832a8e815a7ba7a28"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "rule-based question",
+      "source_chunk_index": 49,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the procedure for handling a 10-Second Penalty in Formula 1 racing?",
+    "expected_answer": "The stewards will give written notification of the penalty to the competitor concerned and inform all competitors using the OMS.",
+    "expected_chunk_ids": [
+      "0201dcdede5d30c9e1905c8c2ebba5ba"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "question",
+      "source_chunk_index": 50,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When can an F1 driver stop their car and avoid a penalty if they elect to do so while following the Safety Car through the Pit Lane?",
+    "expected_answer": "They must stop in their Designated Garage Area whilst a VSC or Safety F1 Car procedure is in use.",
+    "expected_chunk_ids": [
+      "10f06013dbde1b742322bd8e2fecfc31"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "sports regulation",
+      "source_chunk_index": 51,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When can a driver work on their F1 car during a penalty?",
+    "expected_answer": "A driver can work on their F1 car only when it has been stationary for the duration of the penalty, and they are not in the Pit Entry Road or Pit Lane.",
+    "expected_chunk_ids": [
+      "f0c55a95379d1c5d53ecd1ff9e731df1"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "rule-based",
+      "source_chunk_index": 52,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "Can a driver who has already crossed the pit lane and returned to their car during the Safety Car procedure still be penalized for crossing the line on the track?",
+    "expected_answer": "No",
+    "expected_chunk_ids": [
+      "d03893d597361e5b9fee8efce131ce36"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 53,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the maximum time allowed for an F1 car to be worked on after receiving a Stop-and-Go Penalty?",
+    "expected_answer": "30 seconds",
+    "expected_chunk_ids": [
+      "914ab8ddcfa12a68b73c341301bfdf2a"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "rule-based",
+      "source_chunk_index": 54,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the maximum number of penalties that can be imposed upon a driver for failing to serve a penalty?",
+    "expected_answer": "4",
+    "expected_chunk_ids": [
+      "7bf19182b630a2263899948c8c376000"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "rule-based",
+      "source_chunk_index": 55,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the maximum number of penalties that can be given to a driver in Formula 1 racing, as per the Sporting Regulations?",
+    "expected_answer": "The maximum number of penalties that can be given to a driver in Formula 1 racing is three (3) laps or after the end of a TTCS.",
+    "expected_chunk_ids": [
+      "9f98c31fdad86cf6bbd31b96093394e5"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Question",
+      "source_chunk_index": 56,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the maximum allowed number of free practice sessions in a Formula 1 Standard Format Competition?",
+    "expected_answer": "Three",
+    "expected_chunk_ids": [
+      "a5723da18568030195a27c2b14714465"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "Question",
+      "source_chunk_index": 57,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the minimum time required for a free practice session on the second day of on track running after FP2?",
+    "expected_answer": "17.5 hours",
+    "expected_chunk_ids": [
+      "8e13856955c6bb1dfc7c50aef9c77af5"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 58,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "Will Competitors' Free Practice sessions be increased in duration to one and a half (1.5) hours for the upcoming event?",
+    "expected_answer": "Yes",
+    "expected_chunk_ids": [
+      "cc17b9f6315fe81c09689d953f94cea9"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "evaluation",
+      "source_chunk_index": 59,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "Who set the lap time second in the B2.2 Sprint Qualifying Session?",
+    "expected_answer": "The starting grid of the Sprint will be determined by the results of the sprint qualifying session.",
+    "expected_chunk_ids": [
+      "44601e11bd20b8f28eed1d21b61cba28"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 60,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the duration of the Sprint Qualifying session?",
+    "expected_answer": "Sixteen (16) minutes",
+    "expected_chunk_ids": [
+      "f44db280cc2db22cf99954f7d2812457"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "question",
+      "source_chunk_index": 61,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the procedure for determining the top ten (10) positions in Sprint Qualifying Classiﬁcation?",
+    "expected_answer": "The top ten (10) positions will be allocated to the drivers who took part in SQ3, in accordance with the fastest lap time set by each driver in SQ3, the fastest in the 11th position.",
+    "expected_chunk_ids": [
+      "5f337e2e9f41068c0726b8a115e84b21"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "question",
+      "source_chunk_index": 62,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "Who will receive the fastest six positions in SQ2 and SQ3?",
+    "expected_answer": "The drivers who set the fastest lap times in SQ1, SQ2, and SQ3 will receive the next six positions in each category.",
+    "expected_chunk_ids": [
+      "1875b8a7a51022639d62f02d8430a495"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 63,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the classification of a driver who failed to leave the pits during the period?",
+    "expected_answer": "A driver who failed to leave the pits during the period shall be classified as category (C).",
+    "expected_chunk_ids": [
+      "6d3cd3b9dd13db725020680acf3968c5"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "rule-based",
+      "source_chunk_index": 64,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the conditions under which an unclassified driver must be allocated relative positions in Sprint Qualifying?",
+    "expected_answer": "ii. If they got disqualified by the Stewards from Sprint Qualifying.",
+    "expected_chunk_ids": [
+      "1a575a82f334509a39bc2b5e3cb2b345"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "sports regulation",
+      "source_chunk_index": 65,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the number of F1 Cars eligible to participate in the Competition?",
+    "expected_answer": "twenty (22)",
+    "expected_chunk_ids": [
+      "993c5d37ba97629016c14a8ebbde7a43"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 66,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the minimum number of complete laps required to reach a distance of 100km in a sprint session?",
+    "expected_answer": "The minimum number of complete laps required to reach a distance of 100km in a sprint session is 101.",
+    "expected_chunk_ids": [
+      "7824a45f5638aa10c3c3e0eca836dca8"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Question",
+      "source_chunk_index": 67,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When should a Sprint distance be completed before the start signal is given for the next lap?",
+    "expected_answer": "One (1) hour must elapse from the start signal before the scheduled Sprint distance is completed.",
+    "expected_chunk_ids": [
+      "b4fd9661ab47b6e3066df256e450949b"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "evaluation",
+      "source_chunk_index": 68,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the maximum total Sprint duration if the formation lap for the Sprint is started behind the Safety Car?",
+    "expected_answer": "1.5 hours",
+    "expected_chunk_ids": [
+      "66c8ce52a6f549f063a9934930f70bd0"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "multiple choice question",
+      "source_chunk_index": 69,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the procedure to determine the starting grid for a Sprint Qualifying session if neither the Drivers' Championship classiﬁcation nor the Sprint Qualifying classiﬁcation can be applied?",
+    "expected_answer": "The formation of the grid for the Sprint shall be at the sole discretion of the Stewards.",
+    "expected_chunk_ids": [
+      "1952a5ad28a612f538a22945a4b75a21"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Rule-based question",
+      "source_chunk_index": 70,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the temporary grid position for a driver with 15 or less cumulative unserved grid penalties in the previous twelve (12) months?",
+    "expected_answer": "Sprint Qualifying classiﬁcation plus the sum of their unserved grid penalties.",
+    "expected_chunk_ids": [
+      "0218119e810c72b154f08c4de8acbf63"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 71,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the new provisional starting grid for Sprint Qualifying classiﬁcation?",
+    "expected_answer": "The provisional starting grid will be published no less than two (2) hours before the scheduled race.",
+    "expected_chunk_ids": [
+      "60782a1b315f29ffac2f33c164936d9f"
+    ],
+    "metadata": {
+      "difficulty": "MEDIUM",
+      "type": "evaluation",
+      "source_chunk_index": 72,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When will the provisional starting grid be published?",
+    "expected_answer": "No less than two hours before the scheduled start of the formation lap for the Sprint.",
+    "expected_chunk_ids": [
+      "6fa6ccdf79612939db1657586c83ade4"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "evaluation",
+      "source_chunk_index": 73,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the maximum allowed time for a Formula 1 car to start after being withdrawn from the grid?",
+    "expected_answer": "One and a quarter hours before the scheduled start of the formation lap of the Sprint.",
+    "expected_chunk_ids": [
+      "cb7a6240b4419b90d8336e8e45f09c67"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Rule-based question",
+      "source_chunk_index": 74,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the criteria for determining the provisional classiﬁcation in F1 race qualifying?",
+    "expected_answer": "The starting grid of the Race will be determined by the results of t he Race qualifying session (‘Qualifying’ or ‘Q’) which will take place: B2.4.1 The starting grid of the Race will be determined by the results of t he Race qualifying session (“Qualifying” or “Q”) which will take place.",
+    "expected_chunk_ids": [
+      "b0b4f83b37ea9dc4617f5c1b8cf69b78"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 75,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the starting grid for the Race Qualifying Session?",
+    "expected_answer": "The starting grid of the Race will be determined by the results of the Race qualifying session.",
+    "expected_chunk_ids": [
+      "e96b486fc5dbc012ed0aa7ed35301836"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 76,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the duration of the next qualifying session?",
+    "expected_answer": "The session will last for fifteen minutes.",
+    "expected_chunk_ids": [
+      "69e9ff5b8bb2abe06d27abb4fe00717c"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "question",
+      "source_chunk_index": 77,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the procedure for determining the race qualifying classiﬁcation in Formula 1?",
+    "expected_answer": "The Qualifying Classiﬁcation will be determined in the following way: a. Classiﬁed drivers will be ordered according to the procedure below: i. The top ten (10) positions will be allocated to the drivers who took part in Q3 , in accordance with the best time set by each driver in Q3, the fastest in the ﬁrst position. ii. The next six (6) positions will be allocated to the drivers who got eliminated in Q2 , in accordance with the fastest lap time set by each driver in Q2 , the fastest in the 11 th position. iii. The next six (6) positions will be allocated to the drivers who got eliminated in Q1 , in accordance with the fastest lap time set by each driver, the fastest in the 17th position.",
+    "expected_chunk_ids": [
+      "8a923910057f7d2fa58e2cc0d61d6863"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 78,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "Who is the first driver to set a flying lap in Q1?",
+    "expected_answer": "The first driver to set a flying lap in Q1 is position 17.",
+    "expected_chunk_ids": [
+      "e208d19e2713195d38cb9fbc6a99b4cb"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 79,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the classification for drivers who failed to set a lap time in Q1 or if all their lap times were deleted?",
+    "expected_answer": "Unclassified",
+    "expected_chunk_ids": [
+      "435dd9a33e9c2d3bc82ec168c04fe1d4"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Rule-Based System Evaluation Data",
+      "source_chunk_index": 80,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the order for drivers who are unclassified because of condition iii during a race?",
+    "expected_answer": "They will be allocated relative positions, behind those allocated under (A) above, in accordance with the order they were classiﬁed in the last LTCS in which all such Drivers participated during the relevant Competition.",
+    "expected_chunk_ids": [
+      "f6e9e19df1ee9133dc63b9e1a5a2e0ff"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "task",
+      "source_chunk_index": 81,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the minimum distance required for a race session in Formula 1?",
+    "expected_answer": "The minimum distance required for a race session in Formula 1 is the least number of complete laps that can be completed on the track.",
+    "expected_chunk_ids": [
+      "db123334619f8d23d0b53c27ad2de845"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "contextualized question",
+      "source_chunk_index": 82,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the minimum number of complete laps required for a race to be completed in Monaco if the race starts behind the Safety Car and the distance exceeds 260km?",
+    "expected_answer": "The race must exceed 260km. The exception allows two hours to pass before the leader can see the end-of-session signal.",
+    "expected_chunk_ids": [
+      "63e0aeedb050380ff33d3382d11894b4"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 83,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When should the leader be shown the end-of-session signal after crossing the control line?",
+    "expected_answer": "Two hours from the start signal.",
+    "expected_chunk_ids": [
+      "1668193e68ba7278421d3722cc272e62"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Rule-based question",
+      "source_chunk_index": 84,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When is the maximum total Race duration of three (3) hours commence?",
+    "expected_answer": "The maximum total Race duration of three (3) hours will commence at the time the green lights on the start gantry are illuminated to signal the Safety Car will leave the grid in accordance with Article B5.10.",
+    "expected_chunk_ids": [
+      "a403bb6e905f35c98f882c6376cc83a9"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 85,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the procedure to be followed when there are no other methods available to form the grid for the Formula 1 race?",
+    "expected_answer": "b. Starting from a nominally empty grid, drivers will be allocated their grid positions in the following sequence of steps: i. Classiﬁed drivers who have 15 or less cumulative unserved grid penalties for the Race imposed in the previous twelve (12) months will be allocated a temporary grid position",
+    "expected_chunk_ids": [
+      "1e35e694159217db50ba597fccb80923"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "task",
+      "source_chunk_index": 86,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the temporary grid position for a driver with 15 or less cumulative unserved grid penalties in the previous twelve (12) months?",
+    "expected_answer": "Qualifying Classiﬁcation plus the sum of their unserved grid penalties.",
+    "expected_chunk_ids": [
+      "ccd5e0d3e2728e139a0fd3ab862eebab"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 87,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the stipulated time limit for the Stewards to publish the provisional starting grid?",
+    "expected_answer": "Two (2) hours",
+    "expected_chunk_ids": [
+      "565db5c899e10d7fdfbbe270e349c1ad"
+    ],
+    "metadata": {
+      "difficulty": "Easy",
+      "type": "Question",
+      "source_chunk_index": 88,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "When is the provisional starting grid published?",
+    "expected_answer": "Two hours before the scheduled start of the formation lap for the Race.",
+    "expected_chunk_ids": [
+      "0096620a2a5798e6d473b27d92e8abdc"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "task",
+      "source_chunk_index": 89,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the minimum percentage of laps covered by a Formula 1 car in order to be classified as winner?",
+    "expected_answer": "90%",
+    "expected_chunk_ids": [
+      "7246f1b015833d1682444f80741fc1d3"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "sports regulations",
+      "source_chunk_index": 90,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the deadline for submitting the declaration form for scrutineering in Formula 1?",
+    "expected_answer": "Two hours before the start of FP1.",
+    "expected_chunk_ids": [
+      "c2f61e2bce59951709489275df2d717d"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "text",
+      "source_chunk_index": 91,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the rules for using an F1 car in Standard Format and Alternative Format competitions?",
+    "expected_answer": "B3.1.4 The scrutineers may: Check the eligibility of an F1 car or of a Competitor at any time during a Competition.",
+    "expected_chunk_ids": [
+      "01759ac1d1be725dd068121c8f26ab3d"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 92,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the purpose of Article B3.4.2 and Article B3.4.3 in relation to the eligibility of an F1 Car or Competitor?",
+    "expected_answer": "The purpose of these articles is to ensure that F1 cars are properly fitted, dismantled, and maintained before a competition, as well as after it, to guarantee their conformity with safety regulations.",
+    "expected_chunk_ids": [
+      "405f6832ff07a6f38e8c100d11b13e96"
+    ],
+    "metadata": {
+      "difficulty": "High",
+      "type": "Question",
+      "source_chunk_index": 93,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the requirements for packaging and shipping parts or samples to a location determined by the FIA?",
+    "expected_answer": "The Competitor must adequately package such parts or samples to avoid damage during transport, and bear all associated costs of both shipping. The packaging must allow the FIA to apply anti-tamper features or seals.",
+    "expected_chunk_ids": [
+      "69290ce3510a24a62dd68d3e59ba9889"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "regulatory activities",
+      "source_chunk_index": 94,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the responsibility of the Race Director from twenty-four (24) hours prior to the start of the Competition?",
+    "expected_answer": "From twenty-four (24) hours prior to the start of the Competition, it is the sole responsibility of the Race Director.",
+    "expected_chunk_ids": [
+      "51b0946ce5c4605f9de61904147963fc"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "question",
+      "source_chunk_index": 95,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What are the specific requirements for weighing F1 cars after a qualifying session in Sprint Qualifying?",
+    "expected_answer": "The drivers must immediately stop their engines when signalled to do so.",
+    "expected_chunk_ids": [
+      "51da176aeb8436b66f858b14576c3d06"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "rule-based question",
+      "source_chunk_index": 96,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the procedure for a driver who fails to stop when asked to do so and then fails to bring the F1 Car back to the FIA garage?",
+    "expected_answer": "They will be referred to the stewards.",
+    "expected_chunk_ids": [
+      "2439da25ffa1cb781e7d2e09b6f99104"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "rule-based question",
+      "source_chunk_index": 97,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "What is the requirement for an F1 driver to leave their car immediately after Qualifying if they stop on the circuit?",
+    "expected_answer": "They must go to the FIA garage immediately on their return to the Pit Lane.",
+    "expected_chunk_ids": [
+      "fc1232e4350d64fc2f2bbe18ce5556fb"
+    ],
+    "metadata": {
+      "difficulty": "high",
+      "type": "evaluation",
+      "source_chunk_index": 98,
+      "source": "../data/f1-regulations.pdf"
+    }
+  },
+  {
+    "question": "Can a screen cover obstruct the view of the driver during FP1?",
+    "expected_answer": "No",
+    "expected_chunk_ids": [
+      "f635cd5159084be6be405d7d1b393fa5"
+    ],
+    "metadata": {
+      "difficulty": "easy",
+      "type": "multiple choice question",
+      "source_chunk_index": 99,
+      "source": "../data/f1-regulations.pdf"
+    }
+  }
+]
