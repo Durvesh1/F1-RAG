@@ -96,43 +96,42 @@ class RetrievalEvaluator:
         }
 
 
-from typing import List
-import json
-
-def load_eval_dataset(file_path: str) -> List[EvalCase]:
-
-    with open(file_path, "r", encoding="utf-8") as f:
-
-        data = json.load(f)
-
-    return [
-        EvalCase(**item)
-        for item in data
-    ]
-
-eval_cases = load_eval_dataset("eval_dataset.json")
-
-retrieval_evaluator = RetrievalEvaluator()
-
-data = load_f1_data()
-embedding_model = OllamaEmbeddings(model="nomic-embed-text")
-vector_store_type = FaissVectorStore(embedding_model=embedding_model)
-chunking_strategy = RecursiveChunkingStrategy(chunk_size=1000, chunk_overlap=200)
-chunks = data_to_chunks(data, chunking_strategy)
-vector_store = vectorize_data_from_chunks(vector_store_type, chunks)
-similarity_search_retriever = VectorSimilarityRetriever(vector_store)
-bm25_retriever = BM25ChunkRetriever(chunks)
-fusion = RRFFusion()
-# reranker = BGEReranker()
-reranker = None
-retriever_agent = RetrieverAgent(retrievers=[similarity_search_retriever, bm25_retriever],
-    fusion_strategy=fusion,
-    reranker=reranker)
-
-res = retrieval_evaluator.run(
-    retriever_agent,
-    eval_cases,
-    retrieval_k=10
-)
-
-print(res)
+# from typing import List
+# import json
+#
+# def load_eval_dataset(file_path: str) -> List[EvalCase]:
+#
+#     with open(file_path, "r", encoding="utf-8") as f:
+#
+#         data = json.load(f)
+#
+#     return [
+#         EvalCase(**item)
+#         for item in data
+#     ]
+#
+# eval_cases = load_eval_dataset("eval_dataset.json")
+#
+# retrieval_evaluator = RetrievalEvaluator()
+#
+# data = load_f1_data()
+# embedding_model = OllamaEmbeddings(model="nomic-embed-text")
+# vector_store_type = FaissVectorStore(embedding_model=embedding_model)
+# chunking_strategy = RecursiveChunkingStrategy(chunk_size=1000, chunk_overlap=200)
+# chunks = data_to_chunks(data, chunking_strategy)
+# vector_store = vectorize_data_from_chunks(vector_store_type, chunks)
+# similarity_search_retriever = VectorSimilarityRetriever(vector_store)
+# bm25_retriever = BM25ChunkRetriever(chunks)
+# fusion = RRFFusion()
+# # reranker = BGEReranker()
+# reranker = None
+# retriever_agent = RetrieverAgent(retrievers=[similarity_search_retriever, bm25_retriever],
+#     fusion_strategy=fusion,
+#     reranker=reranker)
+#
+# res = retrieval_evaluator.run(
+#     retriever_agent,
+#     eval_cases,
+#     retrieval_k=10
+# )
+#
