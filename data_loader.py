@@ -6,7 +6,7 @@ from document_loaders.document_txt_loader import TEXT_Document_Loader
 
 
 def load_f1_data():
-    file_path = "../data/f1-regulations.pdf"
+    file_path = "./data/f1-regulations.pdf"
     ext = Path(file_path).suffix.lower()
 
     if ext == ".pdf":
