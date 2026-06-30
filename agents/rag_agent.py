@@ -41,24 +41,61 @@ class RagAgent:
 
         return "\n\n".join(formatted_context)
 
-    def get_response(self, query: str, final_docs: list):
+    def get_response(self, query: str, final_docs: list, history: list):
+
+        # context = self.format_chunks(final_docs)
+
+        # prompt = ChatPromptTemplate.from_messages([
+        #     ("system", self.system_prompt),
+        #     ("human",
+        #      """
+        #      Question: {query}
+        #      Context:{context}
+        #      """)
+        # ])
+        #
+        # chain = prompt | self.llm
+        #
+        # response = chain.invoke({
+        #     "query": query,
+        #     "context": context
+        # })
+        #
+        # return response.content
+
+
 
         context = self.format_chunks(final_docs)
+        messages = [
+            ("system", self.system_prompt)]
 
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", self.system_prompt),
-            ("human",
-             """
-             Question: {query}
-             Context:{context}
-             """)
-        ])
+        if history:
+            messages.extend(history)
+
+        messages.append(
+            (
+                "human",
+                """
+                Context:
+                {context}
+        
+                Question:
+                {query}
+                """
+                    )
+            )
+
+        prompt = ChatPromptTemplate.from_messages(
+            messages
+        )
 
         chain = prompt | self.llm
 
-        response = chain.invoke({
-            "query": query,
-            "context": context
-        })
+        response = chain.invoke(
+            {
+                "query": query,
+                "context": context
+            }
+        )
 
         return response.content

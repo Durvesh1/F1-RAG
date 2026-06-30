@@ -154,33 +154,28 @@ class ConversationService:
             "summary": summary
         }
 
-    # --------------------------------
-    # Utility
-    # --------------------------------
+    def get_or_create_conversation(self,user_id: str,title: str):
 
-    @staticmethod
-    def _cosine_similarity(vec1, vec2):
-
-        dot = sum(
-            a * b
-            for a, b
-            in zip(vec1, vec2)
+        conversation = (
+            self.db.query(Conversation)
+            .filter(
+                Conversation.user_id == user_id,
+                Conversation.title == title
+            )
+            .first()
         )
 
-        norm1 = (
-                sum(
-                    a * a
-                    for a in vec1
-                ) ** 0.5
+        if conversation:
+            return conversation.id
+
+        conversation = Conversation(
+            id=str(uuid.uuid4()),
+            user_id=user_id,
+            title=title
         )
 
-        norm2 = (
-                sum(
-                    a * a
-                    for a in vec2
-                ) ** 0.5
-        )
+        self.db.add(conversation)
+        self.db.commit()
+        self.db.refresh(conversation)
 
-        return dot / (
-                norm1 * norm2
-        )
+        return conversation.id

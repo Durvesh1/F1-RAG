@@ -9,7 +9,9 @@ username = input("Please enter your username email Id: ")
 
 conversation_service, user, db = setup_db_services(embedding_model, username)
 
-conversation_id = conversation_service.create_conversation(user_id=user.id,title="F1 Chat")
+conversation_id = conversation_service.get_or_create_conversation(user_id=user.id,title="F1 Chat")
+
+history = conversation_service.get_langchain_messages(conversation_id,limit=20)
 
 query = ""
 
@@ -23,7 +25,7 @@ while True:
         query
     )
     top_chunks = retriever_agent.retrieve(query)
-    response = rag_agent.get_response(query, top_chunks)
+    response = rag_agent.get_response(query, top_chunks, history)
     print(response)
     conversation_service.add_assistant_message(
         conversation_id,
