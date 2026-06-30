@@ -32,4 +32,4 @@ def setup_agents():
                                      )
     rag = RagAgent(llm_service)
 
-    return retriever_agent, rag
+    return retriever_agent, rag, embedding_model
